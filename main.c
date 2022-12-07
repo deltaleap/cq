@@ -53,6 +53,9 @@ queue_pop(struct queue *q, char *dest)
     int index = q->index++;
     memcpy(dest, &(q->msg[index]), MSG_LEN);
     q->len--;
+
+    if(q->full)
+        q->full = 0;
 }
 
 int main()

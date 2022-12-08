@@ -1,6 +1,11 @@
 # CQ: Circular Queue
 
 ### how to use
+- import
+```c
+    #include "cq.h";
+```
+
 - initialize
 ```c
     struct queue q;
@@ -19,7 +24,7 @@
     queue_pop(&q, d);
 ```
 
-The size queue is determined at compile time, using the following macros:
+The size queue is determined at compile time, using the following macros in a `config.h` file:
 ```c
 #define CQ_MSG_LEN 8
 #define CQ_QUEUE_LEN 10

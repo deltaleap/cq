@@ -3,7 +3,7 @@
 ### how to use
 - import
 ```c
-    #include "cq.h";
+    #include "cq.h"
 ```
 
 - initialize
